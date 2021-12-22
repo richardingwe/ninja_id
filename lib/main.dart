@@ -25,7 +25,11 @@ class _NinjaCardState extends State<NinjaCard> {
         elevation: 0.0,
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          setState(() {
+            ninjaLevel ++;
+          });
+        },
         child: Icon(Icons.add),
         backgroundColor: Colors.grey[800],
       ),
