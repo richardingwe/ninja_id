@@ -2,6 +2,17 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(MaterialApp(
-    home: ,
+    home: NinjaCard(),
   ));
+}
+
+class NinjaCard extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Ninja ID Card'),
+      ),
+    );
+  }
 }
