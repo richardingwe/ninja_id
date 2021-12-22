@@ -6,7 +6,14 @@ void main() {
   ));
 }
 
-class NinjaCard extends StatelessWidget {
+class NinjaCard extends StatefulWidget {
+  @override
+  _NinjaCardState createState() => _NinjaCardState();
+}
+
+class _NinjaCardState extends State<NinjaCard> {
+  int ninjaLevel = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -51,7 +58,7 @@ class NinjaCard extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
-             SizedBox(
+            SizedBox(
               height: 30.0,
             ),
             Text(
@@ -73,7 +80,7 @@ class NinjaCard extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
-             SizedBox(
+            SizedBox(
               height: 30.0,
             ),
             Row(
@@ -97,7 +104,7 @@ class NinjaCard extends StatelessWidget {
             )
           ],
         ),
-        ),
+      ),
     );
   }
 }
